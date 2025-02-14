@@ -69,6 +69,6 @@ const scrapeProductLinks = async (categoryUrl, maxPages = 5) => {
 };
 
 // 🟢 Thay link trang danh mục sản phẩm cần quét
-const categoryPage = "https://www.fahasa.com/searchengine?current=n_4_n&q=s%C3%A1ch%20t%C3%B4%20m%C3%A0u%20baby%20three&size=n_48_n&filters%5B0%5D%5Bfield%5D=stock_status&filters%5B0%5D%5Bvalues%5D%5B0%5D=n_1_n&filters%5B0%5D%5Btype%5D=all";
+const categoryPage = "https://www.fahasa.com/searchengine?q=s%C3%A1ch%20t%C3%B4%20m%C3%A0u&size=n_48_n&filters%5B0%5D%5Bfield%5D=cat_1&filters%5B0%5D%5Bvalues%5D%5B0%5D=S%C3%A1ch%20ti%E1%BA%BFng%20Vi%E1%BB%87t&filters%5B0%5D%5Btype%5D=any&sort-field=num_orders_month&sort-direction=desc";
 
-scrapeProductLinks(categoryPage, 1);
+scrapeProductLinks(categoryPage, 10);
