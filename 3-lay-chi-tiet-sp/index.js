@@ -39,7 +39,7 @@ const scrapeProductData = async (productUrl) => {
         });
 
         console.log(`📸 Tìm thấy ${imageUrls.length} ảnh`);
-
+        console.log(`✅ Đã lưu thông tin sản phẩm này vào json!`);
         if (imageUrls.length === 0) {
             throw new Error("Không tìm thấy ảnh sản phẩm.");
         }
